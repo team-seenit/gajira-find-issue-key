@@ -24,7 +24,7 @@ module.exports = class {
   }
 
   async execute () {
-    console.log('{{event}}'')
+    //console.log('{{event}}'')
     const template = eventTemplates[this.argv.from] || this.argv._.join(' ')
     const extractString = this.preprocessString(template)
     const match = extractString.match(issueIdRegEx)
