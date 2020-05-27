@@ -7,6 +7,7 @@ const eventTemplates = {
   branch: '{{event.ref}}',
   commits: "{{event.commits.map(c=>c.message).join(' ')}}",
   pr: '{{event.pull_request.head.ref}}',
+  feature: '{{event.title}}',
 }
 
 module.exports = class {
